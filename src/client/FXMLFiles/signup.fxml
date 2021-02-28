@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="Display" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.signupcontroller">
+    <children>
+        <TextField fx:id="username" layoutX="90.0" layoutY="40.0" text="USERNAME" />
+        <TextField fx:id="password" layoutX="90.0" layoutY="90.0" text="PASSWORD" />
+        <TextField fx:id="ServerIP" layoutX="90.0" layoutY="140.0" text="SERVER IP" />
+        <TextField fx:id="PortNo" layoutX="90.0" layoutY="190.0" text="PORT" />
+        <Button fx:id="Signup" contentDisplay="TOP" graphicTextGap="3.0" layoutX="90.0" layoutY="300.0" mnemonicParsing="false" onAction="#Sign" text="CONFIRM">
+         <font>
+            <Font size="12.666" />
+         </font></Button>
+    </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

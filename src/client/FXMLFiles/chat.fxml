@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="WindowPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.ChatController">
+    <children>
+        <GridPane fx:id="gridPane" prefHeight="800.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label prefHeight="15.0" prefWidth="90.0" text="Chats" />
+                <ScrollPane fx:id="scrollPane" prefHeight="800.0" prefWidth="1000.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <content>
+                        <VBox fx:id="VerticalPane" prefWidth="300.0" />
+                    </content>
+                </ScrollPane>
+                <HBox fx:id="lowerHBox" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <children>
+                        <TextArea fx:id="textBox" prefHeight="42.0" prefWidth="800.0" promptText="Write Your Message Here" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="Send" mnemonicParsing="false" prefHeight="41.0" prefWidth="97.0" text="Send" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                    <children>
+                        <Label fx:id="currentUser" prefHeight="30.0" prefWidth="115.0" text="Name" />
+                        <Label fx:id="currentUserStatus" prefHeight="30.0" prefWidth="214.0" text="Status" />
+                        <Button fx:id="Logout" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" text="Logout" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="refresh" mnemonicParsing="false" prefHeight="41.0" prefWidth="74.0" text="Refresh" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#CallClicked" prefHeight="30.0" prefWidth="70.0" text="Call" />
+                    </children>
+                </HBox>
+                <VBox fx:id="AllChats" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                <Button fx:id="AddFriend" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" text="AddFriend" GridPane.rowIndex="2" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="45.0" minHeight="30.0" prefHeight="30.0" />
+                <RowConstraints maxHeight="345.0" minHeight="330.0" prefHeight="345.0" />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>
